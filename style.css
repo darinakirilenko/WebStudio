@@ -30,10 +30,10 @@ color: #2196F3;}
     color: #212121;
 }
  
-.list-navigation :hover { 
+.list-navigation:hover { 
     color: #2196F3;
  }
- .list-contacts :hover { 
+ .list-contacts:hover { 
     color: #2196F3;
  }
 .list-contacts {
@@ -48,7 +48,7 @@ color: #2196F3;}
 
 
 /* <!-- головний екран --> */
-h1 {
+.h1 {
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -94,7 +94,7 @@ color: #757575;
 
 
 /* <!-- Наша команда --> */
-h2 {
+.h2 {
 font-weight: 700;
 font-size: 36px;
 line-height: 1.17;

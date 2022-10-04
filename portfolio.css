@@ -28,10 +28,10 @@ color: #000000;}
     color: #212121;
 }
  
-.list-navigation :hover { 
+.list-navigation:hover { 
     color: #2196F3;
  }
- .list-contacts :hover { 
+ .list-contacts:hover { 
     color: #2196F3;
  }
 .list-contacts {
@@ -45,18 +45,21 @@ color: #000000;}
 }
 
 /* <!-- тут багато якихось кнопок --> */
+.button-hover {
+   color: #2196F3
+}
 
 /* <!-- фотки фотки --> */
 
-h2 {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.9;
+.h2 {
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
 letter-spacing: 0.03em;
 color: #757575;
 }
 
-p {
+.p {
     font-weight: 400;
 font-size: 16px;
 line-height: 1.9;
