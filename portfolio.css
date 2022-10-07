@@ -1,5 +1,7 @@
 /* <!-- header --> */
-
+ul {
+    list-style-type: none;
+}
 body {
     font-family: 'Roboto';
 }
@@ -10,15 +12,16 @@ a {
 
 .logo {
     font-family: 'Raleway';
-font-weight: 700;
-font-size: 26px;
-line-height: 1.9;
-letter-spacing: 0.03em;
-    color: #2196F3 ;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
 }
 
 .logo-span {
-color: #000000;}
+    color: #2196F3;
+}
 
 .list-navigation {
     font-weight: 500;
@@ -27,13 +30,15 @@ color: #000000;}
     letter-spacing: 0.02em;
     color: #212121;
 }
- 
-.list-navigation:hover { 
+
+.list-navigation:hover {
     color: #2196F3;
- }
- .list-contacts:hover { 
+}
+
+.list-contacts:hover {
     color: #2196F3;
- }
+}
+
 .list-contacts {
 
     font-weight: 500;
@@ -45,27 +50,37 @@ color: #000000;}
 }
 
 /* <!-- тут багато якихось кнопок --> */
-.button-hover {
-   color: #2196F3
+.button:hover {
+   background-color: #2196F3;
+   border: none;
+   color: #FFFFFF;
+}
+
+.button {
+    border: none;
 }
 
 /* <!-- фотки фотки --> */
 
 .h2 {
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.03em;
-color: #757575;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
 }
 
 .p {
-    font-weight: 400;
+    
+font-family: 'Roboto';
+font-weight: 400;
 font-size: 16px;
 line-height: 1.9;
 letter-spacing: 0.03em;
 color: #757575;
 }
+
 /* <!-- footer --> */
 
 .address {
@@ -91,6 +106,7 @@ color: #757575;
     color: #ffffff;}
     
     .list-contacts-footer {
+        
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
