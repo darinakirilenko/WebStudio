@@ -1,14 +1,4 @@
 /* <!-- header --> */
-ul {
-    list-style-type: none;
-}
-body {
-    font-family: 'Roboto';
-}
-
-a {
-    text-decoration: none;
-}
 
 .header-logo {
     font-family: 'Raleway';
@@ -52,13 +42,9 @@ a {
 /* <!-- тут багато якихось кнопок --> */
 .ul-button:hover {
    background-color: #2196F3;
-   border: none;
    color: #FFFFFF;
 }
 
-.ul-button {
-    border: none;
-}
 
 /* <!-- фотки фотки --> */
 
