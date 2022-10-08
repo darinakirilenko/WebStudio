@@ -10,7 +10,7 @@ a {
     text-decoration: none;
 }
 
-.logo {
+.header-logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -19,11 +19,11 @@ a {
     color: #000000;
 }
 
-.logo-span {
+.header-logo-span {
     color: #2196F3;
 }
 
-.list-navigation {
+.header-list-navigation {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -31,15 +31,15 @@ a {
     color: #212121;
 }
 
-.list-navigation:hover {
+.header-list-navigation:hover {
     color: #2196F3;
 }
 
-.list-contacts:hover {
+.header-list-contacts:hover {
     color: #2196F3;
 }
 
-.list-contacts {
+.header-list-contacts {
 
     font-weight: 500;
     font-size: 14px;
@@ -50,19 +50,19 @@ a {
 }
 
 /* <!-- тут багато якихось кнопок --> */
-.button:hover {
+.ul-button:hover {
    background-color: #2196F3;
    border: none;
    color: #FFFFFF;
 }
 
-.button {
+.ul-button {
     border: none;
 }
 
 /* <!-- фотки фотки --> */
 
-.h2 {
+.photos-ul-h2 {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 18px;
@@ -71,7 +71,7 @@ a {
     color: #212121;
 }
 
-.p {
+.photos-ul-p {
     
 font-family: 'Roboto';
 font-weight: 400;
@@ -83,33 +83,41 @@ color: #757575;
 
 /* <!-- footer --> */
 
-.address {
+.footer-address {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    
+
     letter-spacing: 0.03em;
-    
+
     color: #FFFFFF;
-    }
-    
-    .logo-footer {
-        font-family: 'Raleway';
+}
+
+.footer-logo {
+    font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;
+    line-height: 1.9;
     letter-spacing: 0.03em;
-    color: #000000 ;
-    }
-    
-    .logo-span-footer {
-    color: #ffffff;}
-    
-    .list-contacts-footer {
-        
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: #757575;
-    }
+    color: #FFFFFF;
+}
+
+.footer-logo-span {
+    color: #2196F3;
+}
+
+
+
+.footer-list-contacts {
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+
+}
+
+.footer-list-contacts:hover {
+    color: #2196F3;
+}
