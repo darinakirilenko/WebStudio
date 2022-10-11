@@ -39,7 +39,7 @@
 }
 
 /* <!-- головний екран --> */
-.main-screen-h1 {
+.main-screen-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -50,7 +50,7 @@
     color: #FFFFFF;
 }
 
-.section-button {
+.main-screen-button {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
@@ -67,7 +67,7 @@
 
 
 /* <!-- переваги --> */
-.ul-benefits h3 {
+.benefits h3 {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -76,7 +76,7 @@
     color: #212121;
 }
 
-.ul-benefits p {
+.benefits p {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -88,7 +88,7 @@
 
 
 /* <!-- Наша команда --> */
-.team-h2 {
+.team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;

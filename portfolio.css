@@ -40,15 +40,15 @@
 }
 
 /* <!-- тут багато якихось кнопок --> */
-.ul-button:hover {
+.filters-button:hover {
    background-color: #2196F3;
    color: #FFFFFF;
 }
 
 
-/* <!-- фотки фотки --> */
+/* <!-- work examples --> */
 
-.photos-ul-h2 {
+.work-examples-title {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 18px;
@@ -57,7 +57,7 @@
     color: #212121;
 }
 
-.photos-ul-p {
+.work-examples-subtitle {
     
 font-family: 'Roboto';
 font-weight: 400;
