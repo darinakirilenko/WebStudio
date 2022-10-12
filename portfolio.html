@@ -7,89 +7,88 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css     ">
-    <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/portfolio.css">
   </head>
   <body>
     <!-- header  -->
-    <header>
+    <header class="header">
       <a class="header-logo" href="./index.html"> <span class="header-logo-span">Web</span>Studio</a>
-      <ul>
-        <li ><a class="header-list-navigation" href="./index.html">Студія</a></li>
-        <li ><a  class="header-list-navigation"href="./portfolio.html">Портфоліо</a></li>
-        <li ><a  class="header-list-navigation"href="./index.html">Контакти</a></li>
+      <ul class="header-pages">
+        <li class="header-page"><a class="header-navigation" href="./index.html">Студія</a></li>
+        <li class="header-page"><a  class="header-navigation"href="./portfolio.html">Портфоліо</a></li>
+        <li class="header-page"><a  class="header-navigation"href="./index.html">Контакти</a></li>
       </ul>
-      <ul>
-        <li><a  class="header-list-contacts href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="header-list-contacts href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="header-contacts">
+        <li class="header-contact"><a class="header-link href="mailto:info@devstudio.com>info@devstudio.com</a></li>
+        <li class="header-contact"><a class="header-list-contacts href="tel:+380961111111>+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
      
       <!-- filters -->
       
-        <ul>
-            <li><button class="filters-button" type="button">Усе</button></li>
-            <li><button class="filters-button" type="button">Веб-сайти</button></li>
-            <li> <button class="filters-button" type="button">Застосунки</button></li>
-            <li><button class="filters-button" type="button">Дизайн</button></li>
-            <li><button class="filters-button" type="button">Маркетинг</button></li>
-            
+        <ul class="filters">
+            <li class="item-button"><button class="filters-button" type="button">Усе</button></li>
+            <li class="item-button"><button class="filters-button" type="button">Веб-сайти</button></li>
+            <li class="item-button"> <button class="filters-button" type="button">Застосунки</button></li>
+            <li class="item-button"> <button class="filters-button" type="button">Дизайн</button></li>
+            <li class="item-button"><button class="filters-button" type="button">Маркетинг</button></li>
         </ul>
         
       <!-- приклади робіт -->
-      <section>
-        <ul>
-          <li>
+      <section class="portfolio">
+        <ul class="portfolio-list">
+          <li class="portfolio-item">
             <img src="./images/portfolio/1.jpg" alt="Desktop" />
-            <h2 class="work-examples-title">Технокряк</h2>
-            <p class="work-examples-subtitle">Веб-сайт</p>
+            <h2 class="portfolio-title">Технокряк</h2>
+            <p class="portfolio-subtitle">Веб-сайт</p>
           </li>
-          <li>
+          <li class="portfolio-item">
             <img src="./images/portfolio/2.jpg" alt="Two people" />
-            <h2 class="work-examples-title">Постер New Orlean vs Golden Star</h2>
-            <p  class="work-examples-subtitle">Дизайн</p>
+            <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
+            <p  class="portfolio-subtitle">Дизайн</p>
           </li>
-          <li>
+          <li class="portfolio-item">
             <img src="./images/portfolio/3.jpg" alt="Logo" />
-            <h2 class="work-examples-title">Ресторан Seafood</h2>
-            <p class="work-examples-subtitle">Застосунок</p>
+            <h2 class="portfolio-title">Ресторан Seafood</h2>
+            <p class="portfolio-subtitle">Застосунок</p>
           </li>
-          <li>
+          <li class="portfolio-item">
             <img src="./images/portfolio/4.jpg" alt="Headphones" />
-            <h2 class="work-examples-title">Проект Prime</h2>
-            <p class="work-examples-subtitle">Маркетинг</p>
+            <h2 class="portfolio-title">Проект Prime</h2>
+            <p class="portfolio-subtitle">Маркетинг</p>
           </li>
-          <li>
+          <li class="portfolio-item">
             <img src="./images/portfolio/5.jpg" alt="Two boxes" />
-            <h2 class="work-examples-title">Проект Boxes</h2>
-            <p class="work-examples-subtitle">Застосунок</p>
+            <h2 class="portfolio-title">Проект Boxes</h2>
+            <p class="portfolio-subtitle">Застосунок</p>
           </li>
-          <li>
+          <li class="portfolio-item">
             <img src="./images/portfolio/6.jpg" alt="Desktop" />
-            <h2 class="work-examples-title">Inspiration has no Borders</h2>
-            <p class="work-examples-subtitle">Веб-сайт</p>
+            <h2 class="portfolio-title">Inspiration has no Borders</h2>
+            <p class="portfolio-subtitle">Веб-сайт</p>
           </li>
-          <li>
+          <li class="portfolio-item">
             <img src="./images/portfolio/7.jpg" alt="Magazine" />
-            <h2 class="work-examples-title">Видавництво Limited Edition</h2>
-            <p class="work-examples-subtitle">Дизайн</p>
+            <h2 class="portfolio-title">Видавництво Limited Edition</h2>
+            <p class="portfolio-subtitle">Дизайн</p>
           </li>
-          <li>
+          <li class="portfolio-item">
             <img src="./images/portfolio/8.jpg" alt="Tag" />
-            <h2 class="work-examples-title">Проект LAB</h2>
-            <p class="work-examples-subtitle">Маркетинг</p>
+            <h2 class="portfolio-title">Проект LAB</h2>
+            <p class="portfolio-subtitle">Маркетинг</p>
           </li>
-          <li>
+          <li class="portfolio-item">
             <img src="./images/portfolio/9.jpg" alt="Laptop" />
-            <h2 class="work-examples-title">Growing Business</h2>
-            <p class="work-examples-subtitle">Застосунок</p>
+            <h2 class="portfolio-title">Growing Business</h2>
+            <p class="portfolio-subtitle">Застосунок</p>
           </li>
         </ul>
       </section>
     </main>
     <!-- footer -->
-    <footer>
+    <footer class="footer">
       <a class="footer-logo" href="./index.html"> <span class="footer-logo-span">Web</span>Studio</a>
       <address class="footer-address">м. Київ, пр-т Лесі Українки, 26</address>
       <ul>
