@@ -1,4 +1,21 @@
 /* <!-- header --> */
+body {
+    font-family: 'Roboto';
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: red 5px solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .container {
+    display: flex;
+}
+
 .header-logo {
     font-family: 'Raleway';
     font-weight: 700;
@@ -6,14 +23,29 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #000000;
+    
 }
 
+.header {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 .header-logo-span {
     color: #2196F3;
 }
 
+.header-pages {
+    display: flex;
+    margin-left: 93px;
+    margin-right: 335px;
+}
+
+.header-pages li {
+    margin-right: 55px;
+}
+ 
 .header-navigation {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -30,33 +62,52 @@
 }
 
 .header-contacts {
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
-
 }
 
-/* <!-- головний екран --> */
-.mainscreen-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+.header-contacts {
+    display: flex;
+}
 
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
+.header-contacts li {
+    margin-right: 50px;
+} 
+
+/* <!-- головний екран --> */
+
+.main-screen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    /* padding-right: 452px;
+    padding-left: 452px;  */
+}
+.mainscreen-title {
+
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+margin-bottom: 30px;
 }
 
 .mainscreen-button {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9px;
     color: #FFFFFF;
+
     width: 200px;
     height: 50px;
     left: 700px;
@@ -64,17 +115,40 @@
     background: #2196F3;
     border-radius: 4px;
     border-color: #2196F3;
+
+    
 }
 
 
 /* <!-- переваги --> */
+
+.benefits {
+
+    padding-top: 94px;
+    padding-bottom: 94px;
+    /* padding-right: 215px;
+    padding-left: 215px; */
+
+}
+.benefits-list {
+    display: flex;
+    justify-content: center;
+}
+
+.benefits-list li {
+    margin-right: 30px;
+}
+
+
 .benefits-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #212121;
+    font-family: 'Roboto';
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+color: #212121;
+
+margin-bottom: 10px;
 }
 
 .benefits-subtitle {
@@ -87,8 +161,63 @@
 
 /* <!-- Чим ми займаємося --> */
 
+.skills {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    /* padding-left: 215px;
+    padding-right: 215px; */
+}
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+    
+}
+
+.skills-list li {
+    margin-right: 30px;
+    
+}
+ 
+.skills-img {
+    width: 370px;
+    height: 294px;
+    
+}
+
+.skills-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+margin-bottom: 50px;
+}
 
 /* <!-- Наша команда --> */
+
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    /* padding-left: 215px;
+    padding-right: 215px; */
+}
+.team-img {
+    width: 270px;
+    height: 260px;
+}
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+} 
+
+.team-list li {
+    margin-right: 30px;
+}
+
 .team-maintitle {
     font-weight: 700;
     font-size: 36px;
@@ -97,6 +226,8 @@
     letter-spacing: 0.03em;
 
     color: #212121;
+
+    margin-bottom: 50px;
 }
 
 .team-title {
@@ -108,6 +239,9 @@
     letter-spacing: 0.03em;
 
     color: #212121;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team-subtitle {
@@ -118,9 +252,31 @@
     letter-spacing: 0.03em;
 
     color: #757575;
+    margin-bottom: 30px;
 }
 
 /* <!-- footer --> */
+
+.footer {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   /* padding-left: 215px; */
+   padding-top: 60px;
+   padding-bottom: 60px;
+   /* padding-right: 1154px;  */
+}
+
+.footer li {
+    margin-bottom: 9px;
+}
+
+.footer-address {
+    margin-bottom: 9px;
+}
+.footer-logo {
+    margin-bottom: 20px; 
+}
 .footer-address {
     font-weight: 400;
     font-size: 14px;
@@ -158,4 +314,5 @@
 
 .footer-contacts:hover {
     color: #2196F3;
+    
 }
