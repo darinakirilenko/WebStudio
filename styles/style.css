@@ -38,7 +38,8 @@ header .container {
 .header-pages {
     display: flex;
     margin-left: 93px;
-    margin-right: 335px;
+    margin-right: auto;
+    align-items: center;
 }
 
 .header-pages li {
@@ -67,15 +68,17 @@ header .container {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
+    align-items: center;
 }
 
 .header-contacts {
     display: flex;
 }
 
-.header-contacts li {
+.header-contacts li:first-child {
     margin-right: 50px;
 } 
+
 
 /* <!-- головний екран --> */
 
@@ -85,8 +88,13 @@ header .container {
     justify-content: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    /* padding-right: 452px;
-    padding-left: 452px;  */
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(/images/backgroundimg.png)
+    
 }
 .mainscreen-title {
 
@@ -110,12 +118,12 @@ margin-bottom: 30px;
 
     width: 200px;
     height: 50px;
-    left: 700px;
-    top: 430px;
     background: #2196F3;
     border-radius: 4px;
     border-color: #2196F3;
-
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -139,6 +147,10 @@ margin-bottom: 30px;
     margin-right: 30px;
 }
 
+.benefits-list li:last-child {
+    margin-right: auto;
+}
+
 
 .benefits-title {
     font-family: 'Roboto';
@@ -159,13 +171,40 @@ margin-bottom: 10px;
     color: #757575;
 }
 
+.benefits-item::before {
+    display: block;
+    background: #F5F4FA;
+    background-size: 70px 70px;
+    content: '';
+
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    } 
+
+    .antena-icon::before{
+        background-image: url(/images/antena.png);
+    }
+    .clock-icon::before{
+        background-image: url(/images/clock.png);
+    }
+    .diagram-icon::before{
+        background-image: url(/images/diagram.png);
+    }
+    .astronaut-icon::before{
+        background-image: url(/images/astronaut.png);
+    }
+
 /* <!-- Чим ми займаємося --> */
 
 .skills {
     padding-top: 94px;
     padding-bottom: 94px;
-    /* padding-left: 215px;
-    padding-right: 215px; */
+    
 }
 .skills-list {
     display: flex;
@@ -178,6 +217,11 @@ margin-bottom: 10px;
     margin-right: 30px;
     
 }
+
+.skills-list li:last-child {
+    margin-right: auto;
+}
+
  
 .skills-img {
     width: 370px;
@@ -194,11 +238,15 @@ letter-spacing: 0.03em;
 
 color: #212121;
 margin-bottom: 50px;
+
 }
+
 
 /* <!-- Наша команда --> */
 
+
 .team {
+    background-color: #F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px;
     /* padding-left: 215px;
@@ -218,15 +266,23 @@ margin-bottom: 50px;
     margin-right: 30px;
 }
 
+.team-list li:last-child {
+    margin-right: auto;
+}
+
+.team-item { 
+ background-color: #FFFFFF;
+ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
 .team-maintitle {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-
     color: #212121;
-
     margin-bottom: 50px;
 }
 
@@ -261,6 +317,7 @@ margin-bottom: 50px;
    display: flex;
    flex-direction: column;
    align-items: flex-start;
+   background-color: #2F303A;
    /* padding-left: 215px; */
    padding-top: 60px;
    padding-bottom: 60px;
@@ -278,6 +335,7 @@ margin-bottom: 50px;
     margin-bottom: 20px; 
 }
 .footer-address {
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
