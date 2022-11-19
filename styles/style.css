@@ -93,7 +93,7 @@ header .container {
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(/images/backgroundimg.png)
+      url(../images/backgroundimg.png)
     
 }
 .mainscreen-title {
@@ -187,16 +187,16 @@ margin-bottom: 10px;
     } 
 
     .antena-icon::before{
-        background-image: url(/images/antena.png);
+        background-image: url(../images/antena.png);
     }
     .clock-icon::before{
-        background-image: url(/images/clock.png);
+        background-image: url(../images/clock.png);
     }
     .diagram-icon::before{
-        background-image: url(/images/diagram.png);
+        background-image: url(../images/diagram.png);
     }
     .astronaut-icon::before{
-        background-image: url(/images/astronaut.png);
+        background-image: url(../images/astronaut.png);
     }
 
 /* <!-- Чим ми займаємося --> */
