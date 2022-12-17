@@ -27,7 +27,7 @@
         >
         <ul class="header-pages">
           <li class="header-page">
-            <a class="header-navigation" href="./index.html">Студія</a>
+            <a class="header-navigation " href="./index.html">Студія</a>
           </li>
           <li class="header-page">
             <a class="header-navigation" href="./portfolio.html">Портфоліо</a>
@@ -64,7 +64,7 @@
             ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br />
             ВАШОГО БІЗНЕСУ
           </h1>
-          <button class="mainscreen-button" type="button">
+          <button class="mainscreen-button" type="button" data-open-modal> 
             Замовити послугу
           </button>
         </div>
@@ -111,22 +111,22 @@
         <div class="container">
           <h2 class="skills-title">Чим ми займаємося</h2>
           <ul class="skills-list">
-            <li>
-              <img
+            <li class="skills-item">
+              <img 
                 class="skills-img"
                 src="./images/codding.jpg"
                 alt="Desktop"
               />
             </li>
-            <li>
+            <li class="skills-item">
               <img
                 class="skills-img"
                 src="./images/phone.jpg"
                 alt="Hand with phone"
               />
             </li>
-            <li>
-              <img
+            <li class="skills-item">
+              <img 
                 class="skills-img"
                 src="./images/color.jpg"
                 alt="Graphics tablet"
@@ -425,11 +425,84 @@
         </ul>
         
         
+        <!-- modal -->
+        <div class="overlay is-hidden" data-backdrop> 
+            <form class="modal-section is-hidden" >
+                <h2 class="modal-title">Залиште свої дані, ми Вам зателефонуємо</h2>
+                <button class="modal-button" type="button" data-close-modal>
+                    <svg class="modal-closeicon" width="11" height="11">
+                        <use href="./images/symbol-defs.svg#icon-formcrose"></use>
+                    </svg>
+                </button>
+                <ul class="form-list">
+                    <li class="modal-item">
+                        <label for="name" class="modal-subtitle">Ім’я</label>
+                        <input type="text" class="modal-field" required id="name">
+                        <svg class="modal-icon" width="12" height="12">
+                            <use href="./images/symbol-defs.svg#icon-formuser"></use>
+                        </svg>
+                    </li>
+                    <li class="modal-item">
+                        <label for="tel" class="modal-subtitle">Телефон</label>
+                        <input type="tel" class="modal-field" required id="tel">
+                        <svg class="modal-icon" width="13" height="13">
+                            <use href="./images/symbol-defs.svg#icon-formphone"></use>
+                        </svg>
+                    </li>
+                    <li class="modal-item">
+                        <label for="mail" class="modal-subtitle">Пошта</label>
+                        <input type="email" class="modal-field" required id="mail">
+                        <svg class="modal-icon" width="15" height="12">
+                            <use href="./images/symbol-defs.svg#icon-formmail"></use>
+                        </svg>
+                    </li>
+                    <li class="modal-item">
+                        <h3 class="modal-subtitle">Коментарі</h3>
+                        <textarea type="text" class="modal-textarea" placeholder="Введите текст"></textarea>
+                    </li>
+                    <li class="modal-item">
+                        <label for="comment" class="modal-subtitle"></label>
+                        <input type="checkbox" class="modal-checkbox" id="comment" required>
+                        <p class="modal-subtext">Погоджуюсь з розсилкою і приймаю <a class="modal-link" href="./"> Умови договору </a></p>
+                    </li>
+                </ul>
+                <button class="modal-button-submit" type="submit">Надіслати</button>
+            </form>
+        </div>
 
-       
 
 
-      </div>
-    </footer>
+
+
+
+
+
+    <script>
+        const refs = {
+          openModalBtn: document.querySelector("[data-open-modal]"),
+          closeModalBtn: document.querySelector("[data-close-modal]"),
+          backdrop: document.querySelector("[data-backdrop]"),
+        };
+  
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+  
+        refs.backdrop.addEventListener("click", logBackdropClick);
+  
+        function toggleModal() {
+          refs.backdrop.classList.toggle("is-hidden");
+          
+          if(document.body.style.overflow == 'hidden'){
+            document.body.style.overflow = 'visible';
+          }
+          else{
+            document.body.style.overflow = 'hidden';
+          }
+        }
+  
+        function logBackdropClick() {
+          console.log("/");
+        }
+      </script>
   </body>
 </html>
