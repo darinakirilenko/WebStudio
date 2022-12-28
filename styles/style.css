@@ -109,6 +109,17 @@ header .container {
     fill: #2196F3;
 }
 
+.current:after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: px;
+    position: absolute;
+    top: 76px;
+    background-color: #2196F3;
+    border-radius: 5px;
+}
+
 /* <!-- головний екран --> */
 
 .main-screen {
@@ -118,8 +129,14 @@ header .container {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.8),
-            rgba(47, 48, 58, 0.8)),
+            rgba(47,
+                48,
+                58,
+                0.4),
+            rgba(47,
+                48,
+                58,
+                0.4)),
         url(../images/backgroundimg.png)
 }
 
@@ -233,7 +250,7 @@ header .container {
 /* <!-- Чим ми займаємося --> */
 
 .skills {
-    padding-top: 94px;
+
     padding-bottom: 94px;
 
 }
@@ -566,6 +583,8 @@ header .container {
     padding: 12px;
     fill: #ffffff;
 
+    margin-right: 10px;
+
 }
 
 .footer-social-link:hover {
@@ -574,7 +593,8 @@ header .container {
 }
 
 .footer-socials-item {
-
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
 }
@@ -604,8 +624,72 @@ header .container {
 }
 
 
+.footer-link-item {
+    padding-left: 93px;
+    padding-top: 12px;
+}
 
 
+.footer-form {
+    display: flex;
+    justify-content: space-between;
+
+    width: 570px;
+    margin-top: 20px;
+}
+
+.footer-send {
+    fill: #fff;
+    margin-left: 12px;
+}
+
+.footer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+    width: 200px;
+    height: 50px;
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    border: 0;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.80;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+}
+
+.footer-field {
+    width: 358px;
+    height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    background-color: transparent;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    padding: 15px 16px;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+    transition: all ease 0.2s;
+}
+
+.footer-field:hover {
+    border-color: #2196F3;
+}
 
 
 
@@ -681,7 +765,7 @@ header .container {
 }
 
 
-.modal-closeicon {
+.modal-closeicon:hover {
     fill: #2196F3;
     transition: 0.1s
 }
@@ -726,12 +810,15 @@ header .container {
 }
 
 
-.modal-field:focus+ {
+.modal-field:focus+.modal-icon,
+.modal-field:hover+.modal-icon {
     fill: #2196F3;
 }
 
+
+
 .modal-icon {
-    fill: #2196F3;
+    fill: #212121;
 }
 
 .modal-field:hover {
