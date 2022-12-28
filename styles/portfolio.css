@@ -57,6 +57,7 @@ header .container {
 
 .header-navigation:hover {
     color: #2196F3;
+    transition: 250ms;
 }
 
 .header-link {
@@ -79,6 +80,7 @@ header .container {
 
 .header-contacts:hover {
     color: #2196F3;
+    transition: 250ms;
 }
 
 .header-contacts {
@@ -123,6 +125,7 @@ header .container {
 
     border-radius: 5px;
     background-color: #2196F3;
+    transition: 250ms;
 
 }
 
@@ -143,6 +146,7 @@ header .container {
 .filters-button:hover {
     background-color: #2196F3;
     color: #FFFFFF;
+    transition: 250ms;
     border: none;
 }
 
@@ -194,7 +198,7 @@ header .container {
     left: 0;
     padding: 63px 24px;
     opacity: 0;
-    transition: transform 1s;
+    transition: 250ms;
 
     transform: translate(-100%, -100%) rotate(360deg);
 
@@ -349,7 +353,7 @@ header .container {
 
 .footer-contacts:hover {
     color: #2196F3;
-
+    transition: 250ms;
 }
 
 
@@ -365,6 +369,7 @@ header .container {
 
 .footer-social-link:hover {
     background-color: #2196F3;
+    transition: 250ms;
     fill: #FFFFFF;
 }
 
@@ -463,5 +468,6 @@ header .container {
 }
 
 .footer-field:hover {
+    transition: 250ms;
     border-color: #2196F3;
 }
