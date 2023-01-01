@@ -79,12 +79,14 @@ header .container {
     margin-right: 10px;
 }
 
-.header-contacts:hover {
+.header-email:hover,
+.header-phone:hover {
     transition: 250ms;
     color: #2196F3;
 }
 
 .header-contacts {
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -93,15 +95,17 @@ header .container {
     align-items: center;
 }
 
-.header-contacts {
-    display: flex;
-}
-
 
 .header-contacts li:first-child {
     margin-right: 50px;
 }
 
+/* .header-contacts {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+} */
 
 .header-svg {
     fill: 757575;
@@ -760,7 +764,7 @@ header .container {
 
 .modal-button {
     position: absolute;
-    display: flex;
+
     align-items: center;
     justify-content: center;
 
@@ -779,6 +783,12 @@ header .container {
 .modal-closeicon:hover {
     fill: #2196F3;
     transition: 250ms;
+
+}
+
+.modal-closeicon {
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-button:hover {
