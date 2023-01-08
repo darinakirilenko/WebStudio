@@ -12,11 +12,11 @@ body {
     margin-right: auto;
 }
 
-header .container {
+.header__container {
     display: flex;
 }
 
-.header-logo {
+.header__logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -32,22 +32,22 @@ header .container {
     padding-bottom: 25px;
 }
 
-.header-logo-span {
+.header__logo-span {
     color: #2196F3;
 }
 
-.header-pages {
+.header__pages {
     display: flex;
     margin-left: 93px;
     margin-right: auto;
     align-items: center;
 }
 
-.header-pages li {
+.header__pages li {
     margin-right: 55px;
 }
 
-.header-navigation {
+.header__nav {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -55,37 +55,37 @@ header .container {
     color: #212121;
 }
 
-.header-navigation:hover {
+.header__nav:hover {
     color: #2196F3;
     transition: 250ms;
 
 }
 
-.header-link {
+.header__link {
     display: flex;
 
 }
 
-.header-link svg {
+.header__link svg {
     margin-right: 10px;
 }
 
-.header-list-contacts {
+.header__list-contacts {
     display: flex;
 
 }
 
-.header-list-contacts svg {
+.header__list-contacts svg {
     margin-right: 10px;
 }
 
-.header-email:hover,
-.header-phone:hover {
+.header__email:hover,
+.header__phone:hover {
     transition: 250ms;
     color: #2196F3;
 }
 
-.header-contacts {
+.header__contacts {
     display: flex;
     font-weight: 500;
     font-size: 14px;
@@ -96,23 +96,17 @@ header .container {
 }
 
 
-.header-contacts li:first-child {
+.header__contacts li:first-child {
     margin-right: 50px;
 }
 
-/* .header-contacts {
 
-    display: flex;
-    justify-content: center;
-    text-align: center;
-} */
-
-.header-svg {
+.header__svg {
     fill: 757575;
 }
 
 
-.header-contact:hover svg {
+.header__contact:hover svg {
     fill: #2196F3;
     transition: 250ms;
 }
@@ -131,7 +125,7 @@ header .container {
 
 /* <!-- головний екран --> */
 
-.main-screen {
+.main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -149,7 +143,7 @@ header .container {
         url(../images/backgroundimg.png)
 }
 
-.mainscreen-title {
+.main__title {
 
     font-weight: 900;
     font-size: 44px;
@@ -163,7 +157,7 @@ header .container {
     margin-bottom: 30px;
 }
 
-.mainscreen-button {
+.main__button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9px;
@@ -192,21 +186,21 @@ header .container {
 
 }
 
-.benefits-list {
+.benefits__list {
     display: flex;
     justify-content: center;
 }
 
-.benefits-list li {
+.benefits__list li {
     margin-right: 30px;
 }
 
-.benefits-list li:last-child {
+.benefits__list li:last-child {
     margin-right: auto;
 }
 
 
-.benefits-title {
+.benefits__title {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
@@ -217,7 +211,7 @@ header .container {
     margin-bottom: 10px;
 }
 
-.benefits-subtitle {
+.benefits__subtitle {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -225,7 +219,7 @@ header .container {
     color: #757575;
 }
 
-.benefits-item::before {
+.benefits__item::before {
     display: block;
     background: #F5F4FA;
     background-size: 70px 70px;
@@ -264,29 +258,29 @@ header .container {
 
 }
 
-.skills-list {
+.skills__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center
 }
 
-.skills-list li {
+.skills__list li {
     margin-right: 30px;
 
 }
 
-.skills-list li:last-child {
+.skills__list li:last-child {
     margin-right: auto;
 }
 
 
-.skills-img {
+.skills__img {
     width: 370px;
     height: 294px;
 
 }
 
-.skills-title {
+.skills__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -298,7 +292,7 @@ header .container {
 
 }
 
-.skills-item {
+.skills__item {
     text-align: center;
     text-transform: uppercase;
     position: relative;
@@ -313,7 +307,7 @@ header .container {
     color: #FFFFFF;
 }
 
-.skills-item::before {
+.skills__item::before {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -326,15 +320,15 @@ header .container {
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-.skills-item:nth-child(1)::before {
+.skills__item:nth-child(1)::before {
     content: 'Десктопні додатки';
 }
 
-.skills-item:nth-child(2)::before {
+.skills__item:nth-child(2)::before {
     content: 'Мобільні додатки';
 }
 
-.skills-item:nth-child(3)::before {
+.skills__item:nth-child(3)::before {
     content: 'Дизайнерські рішення';
 }
 
@@ -349,26 +343,26 @@ header .container {
 
 }
 
-.team-img {
+.team__img {
     width: 270px;
     height: 260px;
 }
 
-.team-list {
+.team__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.team-item {
+.team__item {
     margin-right: 30px;
 }
 
-.team-list li:last-child {
+.team__list li:last-child {
     margin-right: auto;
 }
 
-.team-item {
+.team__item {
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -376,7 +370,7 @@ header .container {
 
 }
 
-.team-info {
+.team__info {
     padding-bottom: 30px;
     padding-left: 32px;
     padding-right: 32px;
@@ -385,7 +379,7 @@ header .container {
 
 }
 
-.team-maintitle {
+.team__maintitle {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -395,7 +389,7 @@ header .container {
     margin-bottom: 50px;
 }
 
-.team-title {
+.team__title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -409,7 +403,7 @@ header .container {
     margin-bottom: 10px;
 }
 
-.team-subtitle {
+.team__subtitle {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
@@ -420,12 +414,12 @@ header .container {
     margin-bottom: 30px;
 }
 
-.socials-list {
+.socials__list {
     display: flex;
     justify-content: center;
 }
 
-.social-link {
+.social__link {
     fill: #AFB1B8;
     height: 44px;
     width: 44px;
@@ -435,20 +429,20 @@ header .container {
     justify-content: center;
 }
 
-.social-link:hover {
+.social__link:hover {
     background-color: #2196F3;
     fill: #FFFFFF;
     transition: 250ms;
 }
 
-.socials-item:not(:last-child) {
+.socials__item:not(:last-child) {
     margin-right: 10px;
 }
 
 
 /* постійні клієнти */
 
-.clients-title {
+.clients__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -460,14 +454,14 @@ header .container {
     margin-top: 91px;
 }
 
-.clients-list {
+.clients__list {
     display: flex;
     flex-wrap: nowrap;
 
     padding-bottom: 55px;
 }
 
-.clients-item {
+.clients__item {
     display: flex;
     justify-content: center;
     box-sizing: border-box;
@@ -480,20 +474,20 @@ header .container {
     width: 170px;
 }
 
-.clients-item:not(:last-child) {
+.clients__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.clients-svg {
+.clients__svg {
     fill: #AFB1B8;
 }
 
-.clients-item:hover {
+.clients__item:hover {
     border: 1px solid #2196F3;
     transition: 250ms;
 }
 
-.clients-item:hover svg {
+.clients__item:hover svg {
     fill: #2196F3;
     transition: 250ms;
 }
@@ -509,7 +503,7 @@ header .container {
     padding-bottom: 60px;
 }
 
-.footer-info {
+.footer__info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -519,13 +513,13 @@ header .container {
 }
 
 
-.footer-socials {
+.footer__socials {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.footer-colonslist {
+.footer__colonslist {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -535,15 +529,15 @@ header .container {
     margin-bottom: 9px;
 }
 
-.footer-address {
+.footer__address {
     margin-bottom: 9px;
 }
 
-.footer-logo {
+.footer__logo {
     margin-bottom: 20px;
 }
 
-.footer-address {
+.footer__address {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -554,7 +548,7 @@ header .container {
     color: #FFFFFF;
 }
 
-.footer-logo {
+.footer__logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -563,13 +557,13 @@ header .container {
     color: #FFFFFF;
 }
 
-.footer-logo-span {
+.footer__logo-span {
     color: #2196F3;
 }
 
 
 
-.footer-contacts {
+.footer__contacts {
 
     font-weight: 500;
     font-size: 14px;
@@ -579,7 +573,7 @@ header .container {
 
 }
 
-.footer-contacts:hover {
+.footer__contacts:hover {
     color: #2196F3;
     transition: 250ms;
 
@@ -587,7 +581,7 @@ header .container {
 
 
 
-.footer-social-link {
+.footer__social-link {
     display: flex;
 
     height: 44px;
@@ -600,26 +594,26 @@ header .container {
 
 }
 
-.footer-social-link:hover {
+.footer__social-link:hover {
     background-color: #2196F3;
     fill: #FFFFFF;
     transition: 250ms;
 }
 
-.footer-socials-item {
+.footer__socials-item {
     width: 44px;
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
 }
 
-.footer-socials {
+.footer__socials {
     padding-top: 12px;
     margin-left: 70px;
 
 }
 
-.footer-title {
+.footer__title {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
@@ -631,20 +625,20 @@ header .container {
     margin-bottom: 20px;
 }
 
-.footer-socials-list {
+.footer__socials-list {
     display: flex;
     justify-content: space-between;
     width: 206px;
 }
 
 
-.footer-link-item {
+.footer__link-item {
     padding-left: 93px;
     padding-top: 12px;
 }
 
 
-.footer-form {
+.footer__form {
     display: flex;
     justify-content: space-between;
 
@@ -652,12 +646,12 @@ header .container {
     margin-top: 20px;
 }
 
-.footer-send {
+.footer__send {
     fill: #fff;
     margin-left: 12px;
 }
 
-.footer-button {
+.footer__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -681,7 +675,7 @@ header .container {
     color: #FFFFFF;
 }
 
-.footer-field {
+.footer__field {
     width: 358px;
     height: 50px;
 
@@ -701,7 +695,7 @@ header .container {
     transition: all ease 0.2s;
 }
 
-.footer-field:hover {
+.footer__field:hover {
     border-color: #2196F3;
     transition: 250ms;
 }
@@ -733,7 +727,7 @@ header .container {
 }
 
 
-.modal-section {
+.modal__section {
     position: absolute;
 
 
@@ -751,7 +745,7 @@ header .container {
     border-radius: 4px;
 }
 
-.modal-title {
+.modal__title {
     text-align: center;
 
     font-family: 'Roboto';
@@ -762,7 +756,7 @@ header .container {
     color: #212121;
 }
 
-.modal-button {
+.modal__button {
     position: absolute;
 
     align-items: center;
@@ -780,33 +774,33 @@ header .container {
 }
 
 
-.modal-closeicon:hover {
+.modal__closeicon:hover {
     fill: #2196F3;
     transition: 250ms;
 
 }
 
-.modal-closeicon {
+.modal__closeicon {
     justify-content: center;
     align-items: center;
 }
 
-.modal-button:hover {
+.modal__button:hover {
     fill: #2196F3;
     transition: 250ms;
 }
 
-.modal-item {
+.modal__item {
 
     position: relative;
     margin-top: 10px;
 }
 
-.modal-item:first-child {
+.modal__item:first-child {
     margin-top: 12px;
 }
 
-.modal-item:last-child {
+.modal__item:last-child {
     display: flex;
     align-items: center;
 
@@ -820,7 +814,7 @@ header .container {
     margin-top: 20px;
 }
 
-.modal-subtitle {
+.modal__subtitle {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 12px;
@@ -831,28 +825,28 @@ header .container {
 }
 
 
-.modal-field:focus+.modal-icon,
-.modal-field:hover+.modal-icon {
+.modal__field:focus+.modal__icon,
+.modal__field:hover+.modal__icon {
     fill: #2196F3;
 }
 
 
 
-.modal-icon {
+.modal__icon {
     fill: #212121;
 }
 
-.modal-field:hover {
+.modal__field:hover {
     border-color: #2196F3;
     transition: 250ms;
 }
 
-.modal-textarea:focus {
+.modal__textarea:focus {
     border-color: #2196F3;
     transition: 250ms;
 }
 
-.modal-field {
+.modal__field {
     cursor: pointer;
     margin-top: 4px;
 
@@ -860,7 +854,7 @@ header .container {
     border-radius: 4px;
 }
 
-.modal-textarea {
+.modal__textarea {
 
     cursor: pointer;
     margin-top: 4px;
@@ -870,7 +864,7 @@ header .container {
 }
 
 
-.modal-field {
+.modal__field {
     display: block;
 
     padding-left: 12px;
@@ -883,13 +877,13 @@ header .container {
 
 }
 
-.modal-icon {
+.modal__icon {
     position: absolute;
     bottom: 14px;
     left: 15px;
 }
 
-.modal-textarea {
+.modal__textarea {
 
     font-family: 'Roboto';
     font-weight: 400;
@@ -903,29 +897,29 @@ header .container {
     padding: 12px 16px;
 }
 
-.modal-checkbox {
+.modal__checkbox {
     width: 16px;
     height: 15px;
 }
 
-.modal-subtext {
+.modal__subtext {
     margin-left: 8.38px;
 }
 
-.modal-link:link {
+.modal__link:link {
     color: #2196F3;
     text-decoration: underline #2196F3;
     transition: 250ms;
 }
 
 
-.modal-link:visited {
+.modal__link:visited {
     color: #2196F3;
     text-decoration: underline #2196F3;
     transition: 250ms;
 }
 
-.modal-button-submit {
+.modal__button-submit {
 
     display: block;
     margin: 30px auto 0;
