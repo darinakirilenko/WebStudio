@@ -414,12 +414,12 @@ body {
     margin-bottom: 30px;
 }
 
-.socials__list {
+.team__socials-list {
     display: flex;
     justify-content: center;
 }
 
-.social__link {
+.team__social-link {
     fill: #AFB1B8;
     height: 44px;
     width: 44px;
@@ -429,13 +429,13 @@ body {
     justify-content: center;
 }
 
-.social__link:hover {
+.team__social-link:hover {
     background-color: #2196F3;
     fill: #FFFFFF;
     transition: 250ms;
 }
 
-.socials__item:not(:last-child) {
+.team__socials-item:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -708,7 +708,7 @@ body {
 
 /* modal */
 
-.overlay {
+.modal {
     position: fixed;
 
     top: 0;
@@ -720,7 +720,7 @@ body {
     transition: 250ms;
 }
 
-.overlay.is-hidden {
+.modal.is-hidden {
     opacity: 0;
     pointer-events: none;
     transition: 250ms;
