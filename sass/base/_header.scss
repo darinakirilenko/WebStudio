@@ -23,10 +23,10 @@
 }
 
 .header__pages {
-    display: flex;
+    @extend %flex;
     margin-left: 93px;
     margin-right: auto;
-    align-items: center;
+    
 }
 
 .header__pages li {
@@ -38,11 +38,11 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: $main-texts-color;
 }
 
 .header__nav:hover {
-    color: #2196F3;
+    color: $hover-color;
     transition: 250ms;
 
 }
@@ -68,17 +68,17 @@
 .header__email:hover,
 .header__phone:hover {
     transition: 250ms;
-    color: #2196F3;
+    color: $hover-color;
 }
 
 .header__contacts {
-    display: flex;
+    @extend %flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
-    align-items: center;
+    
 }
 
 
@@ -93,7 +93,7 @@
 
 
 .header__contact:hover svg {
-    fill: #2196F3;
+    fill: $hover-color;
     transition: 250ms;
 }
 
@@ -104,7 +104,7 @@
     height: 4px;
     position: absolute;
     top: 76px;
-    background-color: #2196F3;
+    background-color: $hover-color;
     border-radius: 5px;
     transition: 250ms;
 }

@@ -12,7 +12,7 @@
 
 .portfolio__item {
     background-color: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px $box-shadow;
     border-radius: 0px 0px 4px 4px;
     position: relative;
     overflow: hidden;
@@ -20,9 +20,7 @@
 }
 
 .portfolio__overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %%flex-center;
     position: absolute;
 
     top: 0;
@@ -45,7 +43,7 @@
     letter-spacing: 0.03em;
     color: #FFFFFF;
 
-    background: rgba(33, 150, 243, 0.9);
+    background: $hover-color;
 
 }
 
@@ -56,15 +54,15 @@
 }
 
 .portfolio__item:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 1px $box-shadow;
     transform: scale(1);
 }
 
 
 .portfolio__list {
-    display: flex;
+    @extend %%flex-justifycontent-center;
     flex-wrap: wrap;
-    justify-content: center;
+    
 
 }
 
@@ -92,7 +90,7 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: $main-texts-color;
 }
 
 .portfolio__subtitle {
@@ -102,6 +100,6 @@
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: $subtitle-color;
 
 }

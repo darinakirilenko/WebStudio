@@ -5,9 +5,7 @@
 }
 
 .footer__info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    @extend %flex-column;
 
     width: 231px;
     height: 132px;
@@ -15,9 +13,7 @@
 
 
 .footer__socials {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    @extend %flex-column;
 }
 
 .footer__colonslist {
@@ -46,7 +42,7 @@
 
     letter-spacing: 0.03em;
 
-    color: #FFFFFF;
+    color: $dark-background-text-color;
 }
 
 .footer__logo {
@@ -75,7 +71,7 @@
 }
 
 .footer__contacts:hover {
-    color: #2196F3;
+    color: $hover-color;
     transition: 250ms;
 
 }
@@ -96,7 +92,7 @@
 }
 
 .footer__social-link:hover {
-    background-color: #2196F3;
+    background-color: $hover-color;
     fill: #FFFFFF;
     transition: 250ms;
 }
@@ -121,14 +117,13 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $dark-background-text-color;
 
     margin-bottom: 20px;
 }
 
 .footer__socials-list {
-    display: flex;
-    justify-content: space-between;
+    @extend %flex-space-between;
     width: 206px;
 }
 
@@ -140,8 +135,7 @@
 
 
 .footer__form {
-    display: flex;
-    justify-content: space-between;
+    @extend %flex-space-between;
 
     width: 570px;
     margin-top: 20px;
@@ -153,17 +147,14 @@
 }
 
 .footer__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    @extend %flex-center;
 
 
     width: 200px;
     height: 50px;
 
     background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px $box-shadow;
     border-radius: 5px;
     border: 0;
 
@@ -173,7 +164,7 @@
     line-height: 1.80;
     letter-spacing: 0.06em;
 
-    color: #FFFFFF;
+    color: $dark-background-text-color;
 }
 
 .footer__field {
@@ -181,7 +172,7 @@
     height: 50px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0px 4px 4px $box-shadow);
     border-radius: 4px;
 
     background-color: transparent;
@@ -197,6 +188,6 @@
 }
 
 .footer__field:hover {
-    border-color: #2196F3;
+    border-color: $hover-color;
     transition: 250ms;
 }

@@ -2,8 +2,6 @@
 
     padding-top: 94px;
     padding-bottom: 94px;
-    /* padding-right: 215px;
-    padding-left: 215px; */
 
 }
 
@@ -27,7 +25,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: $main-texts-color;
 
     margin-bottom: 10px;
 }
@@ -37,7 +35,7 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: $subtitle-color;
 }
 
 .benefits__item::before {

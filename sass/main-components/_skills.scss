@@ -5,9 +5,8 @@
 }
 
 .skills__list {
-    display: flex;
+    @extend %flex-justifycontent-center;
     flex-wrap: wrap;
-    justify-content: center
 }
 
 .skills__list li {
@@ -33,7 +32,7 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #212121;
+    color: $main-texts-color;
     margin-bottom: 50px;
 
 }
@@ -50,13 +49,11 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
 
-    color: #FFFFFF;
+    color: $dark-background-text-color;
 }
 
 .skills__item::before {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
     position: absolute;
 
     width: 100%;

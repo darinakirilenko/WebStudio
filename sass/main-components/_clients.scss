@@ -4,7 +4,7 @@
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: $main-texts-color;
 
     margin-bottom: 50px;
     margin-top: 91px;
@@ -18,10 +18,10 @@
 }
 
 .clients__item {
-    display: flex;
+    @extend %flex;
     justify-content: center;
     box-sizing: border-box;
-    align-items: center;
+    
 
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -39,11 +39,11 @@
 }
 
 .clients__item:hover {
-    border: 1px solid #2196F3;
+    border: 1px solid $hover-color;
     transition: 250ms;
 }
 
 .clients__item:hover svg {
-    fill: #2196F3;
+    fill: $hover-color;
     transition: 250ms;
 }
