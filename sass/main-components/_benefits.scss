@@ -3,68 +3,71 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
-}
-
-.benefits__list {
-    display: flex;
-    justify-content: center;
-}
-
-.benefits__list li {
-    margin-right: 30px;
-}
-
-.benefits__list li:last-child {
-    margin-right: auto;
-}
 
 
-.benefits__title {
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    color: $main-texts-color;
+    &-benefits__list {
+        display: flex;
+        justify-content: center;
 
-    margin-bottom: 10px;
-}
+        &-benefits__list li {
+            margin-right: 30px;
+        }
 
-.benefits__subtitle {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: $subtitle-color;
-}
+        &-benefits__list li:last-child {
+            margin-right: auto;
+        }
+    }
 
-.benefits__item::before {
-    display: block;
-    background: #F5F4FA;
-    background-size: 70px 70px;
-    content: '';
 
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    margin-bottom: 30px;
 
-    background-repeat: no-repeat;
-    background-position: center;
-}
+    &-benefits__title {
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: $main-texts-color;
 
-.antena-icon::before {
-    background-image: url(../images/antena.png);
-}
+        margin-bottom: 10px;
+    }
 
-.clock-icon::before {
-    background-image: url(../images/clock.png);
-}
+    &-benefits__subtitle {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: $subtitle-color;
+    }
 
-.diagram-icon::before {
-    background-image: url(../images/diagram.png);
-}
+    &-benefits__item::before {
+        display: block;
+        background: #F5F4FA;
+        background-size: 70px 70px;
+        content: '';
 
-.astronaut-icon::before {
-    background-image: url(../images/astronaut.png);
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &-antena-icon::before {
+        background-image: url(../images/antena.png);
+    }
+
+    &-clock-icon::before {
+        background-image: url(../images/clock.png);
+    }
+
+    &-diagram-icon::before {
+        background-image: url(../images/diagram.png);
+    }
+
+    &-astronaut-icon::before {
+        background-image: url(../images/astronaut.png);
+    }
+
 }

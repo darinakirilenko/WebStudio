@@ -9,14 +9,15 @@
     color: $main-texts-color;
 
     border: none;
+
+    &-filters__button:hover {
+            background-color: $hover-color;
+            color: $dark-background-text-color;
+            transition: 250ms;
+            border: none;
+        }
 }
 
-.filters__button:hover {
-    background-color: $hover-color;
-    color: $dark-background-text-color;
-    transition: 250ms;
-    border: none;
-}
 
 .filters__list {
     @extend %%flex-justifycontent-center;
