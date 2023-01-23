@@ -5,22 +5,22 @@
 
 
 
-    &-benefits__list {
+    &__list {
         display: flex;
         justify-content: center;
 
-        &-benefits__list li {
+        & li {
             margin-right: 30px;
         }
 
-        &-benefits__list li:last-child {
+        & li:last-child {
             margin-right: auto;
         }
     }
 
 
 
-    &-benefits__title {
+    &__title {
         font-family: 'Roboto';
         font-weight: 700;
         font-size: 14px;
@@ -31,7 +31,7 @@
         margin-bottom: 10px;
     }
 
-    &-benefits__subtitle {
+    &__subtitle {
         font-weight: 400;
         font-size: 14px;
         line-height: 1.7;
@@ -39,7 +39,7 @@
         color: $subtitle-color;
     }
 
-    &-benefits__item::before {
+    &__item::before {
         display: block;
         background: #F5F4FA;
         background-size: 70px 70px;
@@ -54,19 +54,19 @@
         background-position: center;
     }
 
-    &-antena-icon::before {
+    .antena-icon::before {
         background-image: url(../images/antena.png);
     }
 
-    &-clock-icon::before {
+    .clock-icon::before {
         background-image: url(../images/clock.png);
     }
 
-    &-diagram-icon::before {
+    .diagram-icon::before {
         background-image: url(../images/diagram.png);
     }
 
-    &-astronaut-icon::before {
+    .astronaut-icon::before {
         background-image: url(../images/astronaut.png);
     }
 

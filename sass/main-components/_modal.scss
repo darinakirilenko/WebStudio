@@ -10,14 +10,14 @@
     transition: 250ms;
 
 
-    &-modal &-is-hidden {
+    .modal .is-hidden {
         opacity: 0;
         pointer-events: none;
         transition: 250ms;
     }
 
 
-    &-modal__section {
+    &__section {
         position: absolute;
 
 
@@ -35,7 +35,7 @@
         border-radius: 4px;
     }
 
-    &-modal__title {
+    &__title {
         text-align: center;
 
         font-family: 'Roboto';
@@ -46,7 +46,7 @@
         color: $main-texts-color;
     }
 
-    &-modal__button {
+    &__button {
         position: absolute;
 
         align-items: center;
@@ -69,10 +69,10 @@
     }
 
 
-    &-modal__closeicon {
+    &__closeicon {
         @extend %flex;
 
-        &-modal__closeicon:hover {
+        &:hover {
             fill: $hover-color;
             transition: 250ms;
 
@@ -81,16 +81,16 @@
 
 
 
-    &-modal__item {
+    &__item {
 
         position: relative;
         margin-top: 10px;
 
-        &-modal__item:first-child {
+        &:first-child {
             margin-top: 12px;
         }
 
-        &-modal__item:last-child {
+        &:last-child {
             @extend %flex;
 
 
@@ -106,7 +106,7 @@
 
 
 
-    &-modal__subtitle {
+    &__subtitle {
         font-family: 'Roboto';
         font-weight: 400;
         font-size: 12px;
@@ -117,14 +117,14 @@
     }
 
 
-    &-modal__field:focus+&-modal__icon,
-    &-modal__field:hover+&-modal__icon {
+    &__field:focus+&-icon,
+    &__field:hover+&-icon {
         fill: $hover-color;
     }
 
 
 
-    &-modal__icon {
+    &__icon {
         fill: $main-texts-color;
     }
 
@@ -132,20 +132,20 @@
 
 
 
-    &-modal__field {
+    &__field {
         cursor: pointer;
         margin-top: 4px;
 
         border: 1px solid $main-texts-color;
         border-radius: 4px;
 
-        &-modal__field:hover {
+        &:hover {
             border-color: $hover-color;
             transition: 250ms;
         }
     }
 
-    &-modal__textarea {
+    &__textarea {
         font-family: 'Roboto';
         font-weight: 400;
         font-size: 14px;
@@ -164,14 +164,14 @@
         border-radius: 4px;
 
 
-        &-modal__textarea:focus {
+        &:focus {
             border-color: $hover-color;
             transition: 250ms;
         }
     }
 
 
-    &-modal__field {
+    &__field {
         display: block;
 
         padding-left: 12px;
@@ -184,7 +184,7 @@
 
     }
 
-    &-modal__icon {
+    &__icon {
         position: absolute;
         bottom: 14px;
         left: 15px;
@@ -192,29 +192,29 @@
 
 
 
-    &-modal__checkbox {
+    &__checkbox {
         width: 16px;
         height: 15px;
     }
 
-    &-modal__subtext {
+    &__subtext {
         margin-left: 8.38px;
     }
 
-    &-modal__link:link {
+    &__link:link {
         color: $hover-color;
         text-decoration: underline $hover-color;
         transition: 250ms;
     }
 
 
-    &-modal__link:visited {
+    &__link:visited {
         color: $hover-text-color;
         text-decoration: underline $hover-color;
         transition: 250ms;
     }
 
-    &-modal__button-submit {
+    &__button-submit {
 
         display: block;
         margin: 30px auto 0;

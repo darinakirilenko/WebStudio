@@ -1,6 +1,7 @@
-@mixin button($width) {
+@mixin button($width-btn) {
     position: absolute;
     height: 50px;
+    width: $width-btn;
     background: $hover-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;

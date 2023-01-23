@@ -5,37 +5,34 @@
 
 
 
-    &-team__img {
+    &__img {
         width: 270px;
         height: 260px;
     }
 
-    &-team__list {
+    &__list {
         @extend %%flex-justifycontent-center;
         flex-wrap: wrap;
 
 
-        &-team__list li:last-child {
+        & li:last-child {
             margin-right: auto;
         }
 
     }
 
-    &-team__item {
-        margin-right: 30px;
-    }
 
-
-
-    &-team__item {
+    &__item {
         background-color: $dark-background-text-color;
         box-shadow: 0px 1px 3px $box-shadow;
         border-radius: 0px 0px 4px 4px;
 
+        margin-right: 30px;
+
 
     }
 
-    &-team__info {
+    &__info {
         padding-bottom: 30px;
         padding-left: 32px;
         padding-right: 32px;
@@ -44,7 +41,7 @@
 
     }
 
-    &-team__maintitle {
+    &__maintitle {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
@@ -54,7 +51,7 @@
         margin-bottom: 50px;
     }
 
-    &-team__title {
+    &__title {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
@@ -68,7 +65,7 @@
         margin-bottom: 10px;
     }
 
-    &-team__subtitle {
+    &__subtitle {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.9;
@@ -79,11 +76,11 @@
         margin-bottom: 30px;
     }
 
-    &-team__socials-list {
-        @extend %%flex-justifycontent-center;
+    &__socials-list {
+        @extend %flex-justifycontent-center;
     }
 
-    &-team__social-link {
+    &__social-link {
         fill: #AFB1B8;
         height: 44px;
         width: 44px;
@@ -93,7 +90,7 @@
         justify-content: center;
 
 
-        &-team__social-link:hover {
+        &:hover {
             background-color: $hover-text-color;
             fill: $dark-background-text-color;
             transition: 250ms;
@@ -102,7 +99,7 @@
 
 
 
-    &-team__socials-item:not(:last-child) {
+    &__socials-item:not(:last-child) {
         margin-right: 10px;
     }
 

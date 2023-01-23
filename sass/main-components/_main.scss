@@ -16,7 +16,7 @@
         url(../images/backgroundimg.png);
 
 
-    &-main__title {
+    &__title {
 
         font-weight: 900;
         font-size: 44px;
@@ -30,13 +30,13 @@
         margin-bottom: 30px;
     }
 
-    &-main__button {
+    &__button {
         font-weight: 700;
         font-size: 16px;
         line-height: 1.9px;
         color: $dark-background-text-color;
 
-        @include button($width: 216px);
+        @include button($width-btn: 216px);
 
         display: block;
         margin-left: auto;

@@ -29,17 +29,17 @@
     height: 90px;
     width: 170px;
 
-    &-clients__item:not(:last-child) {
+    &:not(:last-child) {
         margin-right: 30px;
     }
 
 
-    &-clients__item:hover {
+    &:hover {
         border: 1px solid $hover-color;
         transition: 250ms;
     }
 
-    &-clients__item:hover svg {
+    &:hover svg {
         fill: $hover-color;
         transition: 250ms;
     }

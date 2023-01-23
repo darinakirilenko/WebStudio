@@ -4,15 +4,15 @@
     padding-bottom: 25px;
 
 
-    &-header__logo-span {
+    &__logo--span {
         color: #2196F3;
     }
 
-    &-header__container {
+    &__container {
         display: flex;
     }
 
-    &-header__logo {
+    &__logo {
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
@@ -22,13 +22,13 @@
 
     }
 
-    &-header__pages {
+    &__pages {
         @extend %flex;
         margin-left: 93px;
         margin-right: auto;
 
 
-        &-header__pages li {
+        & li {
             margin-right: 55px;
         }
 
@@ -36,27 +36,26 @@
 
 
 
-    &-header__nav {
+    &__nav {
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: $main-texts-color;
 
-        &-header__nav:hover {
+        &:hover {
             color: $hover-color;
             transition: 250ms;
 
         }
 
     }
+__
 
-
-
-    &-header__link {
+    &__link {
         display: flex;
 
-        &-header__link svg {
+        & svg {
             margin-right: 10px;
         }
 
@@ -64,22 +63,22 @@
 
 
 
-    &-header__list-contacts {
+    &__list-contacts {
         display: flex;
 
-        &-header__list-contacts svg {
+        & svg {
             margin-right: 10px;
         }
 
     }
 
-    &-header__email:hover,
-    &-header__phone:hover {
+    &__email:hover,
+    &__phone:hover {
         transition: 250ms;
         color: $hover-color;
     }
 
-    &-header__contacts {
+    &__contacts {
         @extend %flex;
         font-weight: 500;
         font-size: 14px;
@@ -88,24 +87,24 @@
         color: #757575;
 
 
-        &-header__contacts li:first-child {
+        & li:first-child {
             margin-right: 50px;
         }
 
     }
 
 
-    &-header__svg {
+    &__svg {
         fill: 757575;
     }
 
 
-    &-header__contact:hover svg {
+    &__contact:hover svg {
         fill: $hover-color;
         transition: 250ms;
     }
 
-    &-current:after {
+    &__current:after {
         content: '';
         display: block;
         width: 48px;

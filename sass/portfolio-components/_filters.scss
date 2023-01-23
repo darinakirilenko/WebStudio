@@ -10,19 +10,19 @@
 
     border: none;
 
-    &-filters__button:hover {
-            background-color: $hover-color;
-            color: $dark-background-text-color;
-            transition: 250ms;
-            border: none;
-        }
+    &:hover {
+        background-color: $hover-color;
+        color: $dark-background-text-color;
+        transition: 250ms;
+        border: none;
+    }
 }
 
 
 .filters__list {
     @extend %%flex-justifycontent-center;
     flex-wrap: wrap;
-    
+
     padding-top: 94px;
 
 }

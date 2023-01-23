@@ -1,16 +1,16 @@
 .portfolio {
-    /* padding-left: 215px; */
+
     padding-top: 50px;
     padding-bottom: 94px;
-    /* padding-right: 215px;  */
 
 
-    &-portfolio__img {
+
+    &__img {
         width: 370px;
         height: 294px;
     }
 
-    &-portfolio__item {
+    &__item {
         background-color: #FFFFFF;
         box-shadow: 0px 1px 3px $box-shadow;
         border-radius: 0px 0px 4px 4px;
@@ -18,19 +18,19 @@
         overflow: hidden;
 
 
-        &-portfolio__item:hover>.portfolio__overlay {
+        &:hover>&__overlay {
             opacity: 1;
             transform: translate(0px) scale(1) rotate(0);
 
         }
 
-        &-portfolio__item:hover {
+        &:hover {
             box-shadow: 0px 1px 1px $box-shadow;
             transform: scale(1);
         }
     }
 
-    &-portfolio__overlay {
+    &__overlay {
         @extend %%flex-center;
         position: absolute;
 
@@ -60,18 +60,18 @@
 
 
 
-    &-portfolio__list {
+    &__list {
         @extend %%flex-justifycontent-center;
         flex-wrap: wrap;
 
 
-        &-portfolio__list li {
+        & li {
             margin-right: 30px;
             margin-bottom: 30px;
 
         }
 
-        &-portfolio__list li:nth-child(3n) {
+        & li:nth-child(3n) {
             margin-right: 0px;
         }
 
@@ -79,7 +79,7 @@
 
 
 
-    &-portfolio__textwraper {
+    &__textwraper {
         padding-left: 24px;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -87,7 +87,7 @@
 
 
 
-    &-portfolio__title {
+    &__title {
 
         font-weight: 700;
         font-size: 18px;
@@ -96,7 +96,7 @@
         color: $main-texts-color;
     }
 
-    &-portfolio__subtitle {
+    &__subtitle {
 
 
         font-weight: 400;

@@ -4,15 +4,15 @@
 
 
 
-    &-skills__list {
+    &__list {
         @extend %flex-justifycontent-center;
         flex-wrap: wrap;
 
-        &-skills__list li {
+        & li {
             margin-right: 30px;
 
 
-            &-skills__list li:last-child {
+            & li:last-child {
                 margin-right: auto;
             }
 
@@ -20,13 +20,13 @@
     }
 
 
-    &-skills__img {
+    &__img {
         width: 370px;
         height: 294px;
 
     }
 
-    &-skills__title {
+    &__title {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
@@ -38,7 +38,7 @@
 
     }
 
-    &-skills__item {
+    &__item {
         text-align: center;
         text-transform: uppercase;
         position: relative;
@@ -53,7 +53,7 @@
         color: $dark-background-text-color;
 
 
-        &-skills__item::before {
+        &::before {
             @extend %flex-center;
             position: absolute;
 
@@ -65,15 +65,15 @@
         }
 
 
-        &-skills__item:nth-child(1)::before {
+        &:nth-child(1)::before {
             content: 'Десктопні додатки';
         }
 
-        &-skills__item:nth-child(2)::before {
+        &:nth-child(2)::before {
             content: 'Мобільні додатки';
         }
 
-        &-skills__item:nth-child(3)::before {
+        &:nth-child(3)::before {
             content: 'Дизайнерські рішення';
         }
     }
