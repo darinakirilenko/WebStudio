@@ -10,7 +10,7 @@
     transition: 250ms;
 
 
-    .modal .is-hidden {
+    & .is-hidden {
         opacity: 0;
         pointer-events: none;
         transition: 250ms;
@@ -62,7 +62,7 @@
         border-radius: 50%;
         transition: 250ms;
 
-        &-modal__button:hover {
+        &__button:hover {
             fill: $hover-color;
             transition: 250ms;
         }
