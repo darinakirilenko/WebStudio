@@ -17,9 +17,19 @@
     }
 
     &__colonslist {
-        display: flex;
+
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1200px) {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
     }
 
     & li {
@@ -101,10 +111,19 @@
 
 
     &__socials-item {
+
+        text-align: center;
         width: 44px;
         height: 44px;
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.1);
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1200px) {}
+
+
+
     }
 
     &__socials {
@@ -134,14 +153,25 @@
     &__link-item {
         padding-left: 93px;
         padding-top: 12px;
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1200px) {}
     }
 
 
     &__form {
-        @extend %flex-space-between;
+
 
         width: 570px;
         margin-top: 20px;
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1200px) {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 
     &__send {
@@ -151,7 +181,7 @@
 
     &__button {
         @extend %flex-center;
-        @include button($width: 200px);
+        @include button($width-btn: 200px);
 
         font-family: 'Roboto';
         font-weight: 700;

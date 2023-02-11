@@ -1,26 +1,41 @@
 .benefits {
-
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
 
 
     &__list {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
 
         & li {
-            margin-right: 30px;
+            margin-right: auto;
+            margin-left: auto;
+
+            @media screen and (min-width:1200px) {
+                margin-right: 30px;
+                padding-top: 94px;
+                padding-bottom: 94px;
+            }
+
+
         }
 
         & li:last-child {
             margin-right: auto;
         }
+
+
+
+
     }
 
 
 
     &__title {
+        text-align: center;
+        position: center;
         font-family: 'Roboto';
         font-weight: 700;
         font-size: 14px;
@@ -29,6 +44,15 @@
         color: $main-texts-color;
 
         margin-bottom: 10px;
+
+        @media screen and (min-width:1200px) {
+            text-align: left;
+        }
+
+        @media screen and (min-width:768px) {
+            text-align: left;
+        }
+
     }
 
     &__subtitle {
@@ -37,6 +61,9 @@
         line-height: 1.7;
         letter-spacing: 0.03em;
         color: $subtitle-color;
+        margin-bottom: 30px;
+
+
     }
 
     &__item::before {
@@ -45,13 +72,23 @@
         background-size: 70px 70px;
         content: '';
 
-        width: 270px;
+        width: 450px;
         height: 120px;
         border-radius: 4px;
         margin-bottom: 30px;
 
         background-repeat: no-repeat;
         background-position: center;
+
+        @media screen and (min-width:768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width:1200px) {
+            width: 270px;
+        }
+
+
     }
 
     .antena-icon::before {

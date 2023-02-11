@@ -31,7 +31,7 @@
     }
 
     &__overlay {
-        @extend %%flex-center;
+        @extend %flex-center;
         position: absolute;
 
         top: 0;
@@ -61,7 +61,7 @@
 
 
     &__list {
-        @extend %%flex-justifycontent-center;
+        @extend %flex-justifycontent-center;
         flex-wrap: wrap;
 
 

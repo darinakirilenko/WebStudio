@@ -50,9 +50,8 @@
         }
 
     }
-__
 
-    &__link {
+    __ &__link {
         display: flex;
 
         & svg {
@@ -116,6 +115,10 @@ __
         transition: 250ms;
     }
 
+
+    @media screen and (min-width:768px) {}
+
+    @media screen and (min-width:1200px) {}
 
 
 }

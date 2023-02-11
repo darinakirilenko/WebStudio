@@ -20,7 +20,7 @@
 
 
 .filters__list {
-    @extend %%flex-justifycontent-center;
+    @extend %flex-justifycontent-center;
     flex-wrap: wrap;
 
     padding-top: 94px;

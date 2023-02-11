@@ -2,8 +2,8 @@
     @extend %flex-justifycontent-center;
     flex-wrap: wrap;
 
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(to right,
             rgba(47,
                 48,
@@ -16,10 +16,16 @@
         url(../images/backgroundimg.png);
 
 
+    @media screen and (min-width:1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+
     &__title {
 
         font-weight: 900;
-        font-size: 44px;
+        font-size: 26px;
         line-height: 1.36;
 
         text-align: center;
@@ -28,7 +34,13 @@
 
         color: $dark-background-text-color;
         margin-bottom: 30px;
+
+        @media screen and (min-width:1200px) {
+            font-size: 44px;
+        }
+
     }
+
 
     &__button {
         font-weight: 700;
@@ -42,6 +54,10 @@
         margin-left: auto;
         margin-right: auto;
 
+
     }
+
+
+
 
 }

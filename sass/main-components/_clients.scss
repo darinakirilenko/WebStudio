@@ -1,20 +1,37 @@
 .clients__title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: $main-texts-color;
 
-    margin-bottom: 50px;
-    margin-top: 91px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+
+
+
+
+
+
 }
 
 .clients__list {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
-    padding-bottom: 55px;
+    padding-bottom: 30px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+    @media screen and (min-width:768px) {}
+
+    @media screen and (min-width:1200px) {
+        flex-wrap: nowrap;
+        padding-bottom: 55px;
+    }
 }
 
 .clients__item {
@@ -26,12 +43,32 @@
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 
-    height: 90px;
-    width: 170px;
+    width: 210px;
+    height: 92px;
 
-    &:not(:last-child) {
-        margin-right: 30px;
+
+    margin-bottom: 30px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width:768px) {
+        width: 226px;
+        height: 92px;
     }
+
+    @media screen and (min-width:1200px) {
+        height: 90px;
+        width: 170px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+
+    }
+
+
+
 
 
     &:hover {
