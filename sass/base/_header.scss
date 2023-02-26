@@ -4,9 +4,7 @@
     padding-bottom: 25px;
 
 
-    &__logo--span {
-        color: #2196F3;
-    }
+
 
     &__container {
         display: flex;
@@ -19,6 +17,10 @@
         line-height: 1.19;
         letter-spacing: 0.03em;
         color: #000000;
+
+        &--span {
+            color: #2196F3;
+        }
 
     }
 

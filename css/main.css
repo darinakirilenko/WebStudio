@@ -71,9 +71,6 @@ h3 {
   padding-top: 24px;
   padding-bottom: 25px;
 }
-.header__logo--span {
-  color: #2196F3;
-}
 .header__container {
   display: flex;
 }
@@ -84,6 +81,9 @@ h3 {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+}
+.header__logo--span {
+  color: #2196F3;
 }
 .header__pages {
   margin-left: 93px;
