@@ -360,6 +360,12 @@ __ .header__link svg {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .benefits__list {
   display: flex;
   justify-content: center;
@@ -372,8 +378,6 @@ __ .header__link svg {
 @media screen and (min-width: 1200px) {
   .benefits__list li {
     margin-right: 30px;
-    padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 .benefits__list li:last-child {
@@ -456,8 +460,10 @@ __ .header__link svg {
 .skills {
   padding-bottom: 94px;
 }
-.skills__list {
-  flex-wrap: wrap;
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .skills {
+    display: none;
+  }
 }
 .skills__list li {
   margin-right: 30px;
@@ -802,6 +808,7 @@ __ .header__link svg {
   .footer__link-item {
     padding-left: 93px;
     padding-top: 12px;
+    text-align: left;
   }
 }
 .footer__form {

@@ -434,6 +434,7 @@ __ .header__link svg {
   .footer__link-item {
     padding-left: 93px;
     padding-top: 12px;
+    text-align: left;
   }
 }
 .footer__form {

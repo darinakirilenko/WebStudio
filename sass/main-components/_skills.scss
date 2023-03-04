@@ -1,12 +1,16 @@
 .skills {
 
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        display: none;
+    }
+
     padding-bottom: 94px;
 
 
 
     &__list {
         @extend %flex-justifycontent-center;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
 
         & li {
             margin-right: 30px;
