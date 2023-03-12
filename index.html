@@ -57,6 +57,13 @@
             </a>
           </li>
         </ul>
+
+        <button class="header__button" data-open-Menu>
+          <svg width="40" height="40" class="header__button__svg" >
+                <use href="./images/symbol-defs1.svg#icon-menu">
+            </svg>
+        </button>
+
       </div>
     </header>
     <main>
@@ -439,7 +446,7 @@
         </footer>
 
     <!-- modal -->
-    <!-- <div class="modal is-hidden" data-backdrop> 
+    <div class="modal is-hidden" data-backdrop> 
             <form class="modal__section is-hidden" >
                 <h2 class="modal__title">Залиште свої дані, ми Вам зателефонуємо</h2>
                 <button class="modal__button" type="button" data-close-modal>
@@ -483,6 +490,11 @@
             </form>
         </div>
 
+
+        <div class="header-menu is-hidden" data-backdropMenu>
+
+         </div>
+
     <script>
         const refs = {
           openModalBtn: document.querySelector("[data-open-modal]"),
@@ -509,6 +521,29 @@
         function logBackdropClick() {
           console.log("/");
         }
-      </script> -->
+
+
+            // menu
+
+        const refsMenu = {
+            openMenuBtn: document.querySelector("[data-open-Menu]"),
+            closeMenuBtn: document.querySelector("[data-close-Menu]"),
+            backdrop: document.querySelector("[data-backdropMenu]"),
+        };
+
+        refsMenu.openMenuBtn.addEventListener("click", toggleMenu);
+        refsMenu.closeMenuBtn.addEventListener("click", toggleMenu);
+
+        function toggleMenu() {
+            refsMenu.backdrop.classList.toggle("is-hidden");
+
+            if (document.body.style.overflow == 'hidden') {
+                document.body.style.overflow = 'visible';
+            }
+            else {
+                document.body.style.overflow = 'hidden';
+            }
+        }
+      </script>
   </body>
 </html>

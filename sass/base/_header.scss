@@ -2,6 +2,34 @@
     display: flex;
     padding-top: 24px;
     padding-bottom: 25px;
+    position: relative;
+
+    &__button {
+
+        left: 90%;
+        top: 20%;
+
+        position: absolute;
+
+        background-color: #fff;
+        border: none;
+
+        @media screen and (min-width: 768px) {
+
+            display: none;
+        }
+
+
+        &__svg {
+
+
+            @media screen and (min-width: 786px) {
+                display: none;
+            }
+        }
+
+
+    }
 
 
 
@@ -25,9 +53,21 @@
     }
 
     &__pages {
-        @extend %flex;
-        margin-left: 93px;
-        margin-right: auto;
+
+
+        display: none;
+
+        @media screen and (min-width: 768px) {
+
+            display: flex;
+            align-items: center;
+            margin-left: 93px;
+            margin-right: auto;
+
+
+        }
+
+        @media screen and (min-width: 1200px) {}
 
 
         & li {
@@ -80,16 +120,45 @@
     }
 
     &__contacts {
+
+
+        display: none;
+
+        @media screen and (min-width: 768px) {
+
+
+
+            display: flex;
+            align-items: center;
+
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+
+            color: #757575;
+
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: 1200px) {
+            letter-spacing: 0.02em;
+        }
+
+        margin-left: auto;
+
+
         @extend %flex;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: #757575;
+
 
 
         & li:first-child {
-            margin-right: 50px;
+
+
+            @media screen and (min-width: 1200px) {
+                margin-right: 50px;
+            }
+
+
         }
 
     }
