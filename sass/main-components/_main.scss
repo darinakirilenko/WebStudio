@@ -47,6 +47,7 @@
         font-size: 16px;
         line-height: 1.9px;
         color: $dark-background-text-color;
+        border: none;
 
         @include button($width-btn: 216px);
 
